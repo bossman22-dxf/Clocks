@@ -162,9 +162,7 @@ class DigitalClock(TimeActionBase):
         self.show_seconds_switch.connect("notify::active", self.on_show_seconds_switch_toggled)
         self.label_position_row.connect("notify::selected", self.on_label_position_changed)
 
-        return [self.twenty_four_format_switch, self.show_seconds_switch, self.label_position_row]
-
-        return rows + [self.twenty_four_format_switch, self.show_seconds_switch]
+        return rows + [self.twenty_four_format_switch, self.show_seconds_switch, self.label_position_row] #removed inproper return and allowed rows to display timezone config correctly
     
     def load_defaults(self):
         settings = self.get_settings()
