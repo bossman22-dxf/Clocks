@@ -339,7 +339,7 @@ class ClocksPlugin(PluginBase):
         # Register plugin
         self.register(
             plugin_name=self.lm.get("plugin.name"),
-            github_repo="https://github.com/StreamController/Clocks",
+            github_repo="https://github.com/bossman22-dxf/Clocks",
             plugin_version="1.0.42",
             app_version="1.0.0-alpha"
         )
